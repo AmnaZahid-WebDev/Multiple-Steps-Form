@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .steps {
+            width: 810px;
+            margin: 20px auto 30px;
+            display: flex;
+        }
+
+        .step {
+            flex: 1;
+            background-color: #ccc;
+            padding: 10px 20px;
+            font-size: 25px;
+            text-align: center;
+            box-sizing: border-box;
+            white-space: nowrap;
+        }
+
+        .completed {
+            background-color: lightgreen;
+        }
+
+        .active {
+            background-color: #72a9df;
+        }
+
+        fieldset {
+            width: 760px;
+            height: 480px;
+            margin: auto;
+            border: 2px solid gray;
+        }
+
+        legend {
+            font-size: 25px;
+        }
+
+        label {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 500px;
+            height: 28px;
+            font-size: 18px;
+            padding-left: 6px;
+            margin-top: 5px;
+            margin-bottom: 25px;
+        }
+
+        .cnic input {
+            width: 30px;
+            height: 32px;
+            font-size: 18px;
+            margin: 5px 3px 20px 1px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .buttons img {
+            width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="steps">
+
+        <div class="step completed">
+            Step 1: Account
+        </div>
+
+        <div class="step active">
+            Step 2: Personal Details
+        </div>
+
+        <div class="step">
+            Step 3: Your Review
+        </div>
+
+    </div>
+
+
+    <form>
+        <fieldset>
+            <legend>Personal Details</legend>
+
+<br>
+            <label>First Name:</label>
+<br>
+
+            <input type="text" placeholder="Enter First Name">
+
+<br>
+
+            <label>Last Name:</label>
+<br>
+
+            <input type="text" placeholder="Enter Last Name">
+<br>
+
+            <label>CNIC:</label>
+            <div class="cnic">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+
+                -
+
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+
+                -
+
+                <input type="text" maxlength="1">
+
+            </div>
+
+            <label>Social Link:</label>
+<br>
+
+            <input type="text" placeholder="Enter Facebook/Linkedin profile link">
+            <div class="buttons">
+
+                <a href="account.html">
+                <img src="images/back.png" alt="Back">
+                </a>
+
+                <a href="review.html">
+                <img src="images/next.png" alt="Next">
+                </a>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Review</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .steps {
+            width: 810px;
+            margin: 20px auto 30px;
+            display: flex;
+        }
+
+        .step {
+            flex: 1;
+            background-color: #ccc;
+            padding: 10px 15px;
+            font-size: 25px;
+            text-align: center;
+            box-sizing: border-box;
+            white-space: nowrap;
+        }
+
+        .completed {
+            background-color: lightgreen;
+        }
+
+        .active {
+            background-color: #72a9df;
+        }
+
+        fieldset {
+            width: 740px;
+            height: 480px;
+            margin: auto;
+            border: 2px solid gray;
+        }
+
+        legend {
+            font-size: 25px;
+        }
+
+        label {
+            font-size: 23px;
+        }
+
+        .question {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 200px;
+            height: 32px;
+            font-size: 16px;
+        }
+
+        .radio {
+            font-size: 21px;
+        }
+
+        textarea {
+            width: 420px;
+            height: 80px;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        .file {
+            font-size: 18px;
+        }
+
+        .checkbox {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .buttons img {
+            width: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="steps">
+
+    <div class="step completed">
+        Step 1: Account
+    </div>
+
+    <div class="step completed">
+         Step 2: Personal Details
+    </div>
+
+    <div class="step active">
+         Step 3: Your Review
+    </div>
+
+    </div>
+
+
+    <form>
+    <fieldset>
+        <legend>Your Review:</legend>
+<br>
+
+        <label class="question">
+            How did you hear about us?
+        </label>
+
+        <select>
+            <option>Select your option</option>
+            <option>Facebook</option>
+            <option>LinkedIn</option>
+            <option>Google</option>
+            <option>Friend</option>
+        </select>
+
+<br><br>
+
+        <label class="question">
+            Would you visit again?
+        </label>
+
+<br>
+
+        <label class="radio">
+            <input type="radio" name="visit"> Yes
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="visit"> No
+        </label>
+
+        <label class="radio">
+            <input type="radio" name="visit"> Maybe
+        </label>
+
+<br><br>
+
+        <label class="question">
+             Comments:
+        </label>
+
+<br>
+
+        <textarea placeholder="Enter your comments here..."></textarea>
+
+<br><br>
+
+        <label class="question">
+            Documents:
+        </label>
+
+<br>
+
+        <input type="file" class="file">
+
+ <br><br>
+
+        <label class="checkbox">
+        <input type="checkbox" checked>
+             Sign me up for email updates
+        </label>
+
+        <div class="buttons">
+
+        <a href="personal.html">
+        <img src="images/back.png" alt="Back">
+        </a>
+
+        <a href="index.html">
+            <img src="images/submit.png" alt="Submit">
+        </a>
+
+        </div>
+</fieldset>
+</form>
+
+</body>
+</html>
